@@ -31,8 +31,8 @@
           },
           colors: {
             pharma: {
-              teal: '#0d9488',
-              emerald: '#10b981',
+              primary: '#2563eb',
+              accent: '#06b6d4',
               cyan: '#06b6d4',
               blue: '#2563eb',
               dark: '#070b12',
@@ -60,12 +60,12 @@
       border: 1px solid rgba(255, 255, 255, 0.08);
     }
     .glass-card:hover {
-      border-color: rgba(13, 148, 136, 0.3);
+      border-color: rgba(37, 99, 235, 0.3);
     }
     .tab-btn.active {
-      background: linear-gradient(135deg, #0d9488 0%, #06b6d4 100%);
+      background: linear-gradient(135deg, #2563eb 0%, #06b6d4 100%);
       color: white;
-      box-shadow: 0 4px 20px rgba(13, 148, 136, 0.4);
+      box-shadow: 0 4px 20px rgba(37, 99, 235, 0.4);
     }
     .scanner-laser {
       position: absolute;
@@ -99,12 +99,12 @@
     }
   </style>
 </head>
-<body class="min-h-screen flex flex-col selection:bg-teal-600 selection:text-white">
+<body class="min-h-screen flex flex-col selection:bg-blue-600 selection:text-white">
 
   <!-- ==================== HEADER ==================== -->
   <header class="sticky top-0 z-50 glass-card border-b border-white/10 px-4 lg:px-8 py-3 flex items-center justify-between">
     <div class="flex items-center gap-3">
-      <a href="../../index.html" class="flex items-center gap-2 px-2.5 py-1.5 rounded-xl bg-slate-900 border border-white/10 hover:border-teal-500 text-xs text-slate-300 hover:text-white transition group" title="Retour au Portfolio">
+      <a href="../../index.html" class="flex items-center gap-2 px-2.5 py-1.5 rounded-xl bg-slate-900 border border-white/10 hover:border-blue-500 text-xs text-slate-300 hover:text-white transition group" title="Retour au Portfolio">
         <i class="fa-solid fa-arrow-left text-[11px] group-hover:-translate-x-0.5 transition"></i>
         <span>Portfolio</span>
       </a>
@@ -115,8 +115,8 @@
         </div>
         <div>
           <div class="flex items-center gap-2">
-            <span class="font-extrabold text-sm tracking-tight text-white font-display">PharmaCare <span class="text-teal-400">PRO</span></span>
-            <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-teal-500/10 text-teal-300 border border-teal-500/25">ERP &amp; Vision OCR v3.8</span>
+            <span class="font-extrabold text-sm tracking-tight text-white font-display">PharmaCare <span class="text-cyan-400">PRO</span></span>
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-blue-500/10 text-teal-300 border border-blue-500/25">ERP &amp; Vision OCR v3.8</span>
           </div>
           <p class="text-[10px] text-slate-400">Par 0dh4m (Adham Cherkaoui Eddeqaqi) · Solution d'Officine Haute Fidélité</p>
         </div>
@@ -126,12 +126,12 @@
     <!-- Right Header Actions -->
     <div class="flex items-center gap-3">
       <div class="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/90 border border-white/10 text-xs">
-        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
         <span class="text-slate-300">Officine : <strong class="text-teal-300">Pharmacie Al-Amal (Rabat)</strong></span>
       </div>
 
       <div class="flex items-center rounded-xl bg-slate-900 border border-white/10 p-0.5 text-xs">
-        <button onclick="setLang('fr')" id="btn-fr" class="px-2 py-1 rounded-lg font-semibold bg-teal-600 text-white transition">FR</button>
+        <button onclick="setLang('fr')" id="btn-fr" class="px-2 py-1 rounded-lg font-semibold bg-blue-600 text-white transition">FR</button>
         <button onclick="setLang('en')" id="btn-en" class="px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white transition">EN</button>
       </div>
     </div>
@@ -142,15 +142,15 @@
     <div class="grid grid-cols-2 md:grid-cols-4 gap-3 lg:gap-4">
       <!-- Stat 1 -->
       <div class="glass-card p-4 rounded-2xl border border-white/10 flex items-center gap-3.5">
-        <div class="w-11 h-11 rounded-xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400 text-lg">
+        <div class="w-11 h-11 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-cyan-400 text-lg">
           <i class="bi bi-wallet2"></i>
         </div>
         <div>
           <span class="text-[11px] text-slate-400 block font-medium">Recette du Jour</span>
           <div class="text-lg lg:text-xl font-bold font-mono text-white flex items-baseline gap-1">
-            <span id="stat-revenue">14,850.00</span> <span class="text-xs text-teal-400 font-sans">MAD</span>
+            <span id="stat-revenue">14,850.00</span> <span class="text-xs text-cyan-400 font-sans">MAD</span>
           </div>
-          <span class="text-[10px] text-emerald-400 flex items-center gap-1"><i class="bi bi-graph-up-arrow"></i> +12.4% vs hier</span>
+          <span class="text-[10px] text-cyan-400 flex items-center gap-1"><i class="bi bi-graph-up-arrow"></i> +12.4% vs hier</span>
         </div>
       </div>
 
@@ -170,29 +170,29 @@
 
       <!-- Stat 3 -->
       <div class="glass-card p-4 rounded-2xl border border-white/10 flex items-center gap-3.5">
-        <div class="w-11 h-11 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-lg">
+        <div class="w-11 h-11 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-cyan-400 text-lg">
           <i class="bi bi-boxes"></i>
         </div>
         <div>
           <span class="text-[11px] text-slate-400 block font-medium">Alertes Stock Critique</span>
           <div class="text-lg lg:text-xl font-bold font-mono text-white flex items-baseline gap-1">
-            <span id="stat-low-stock">3</span> <span class="text-xs text-amber-400 font-sans">produits</span>
+            <span id="stat-low-stock">3</span> <span class="text-xs text-cyan-400 font-sans">produits</span>
           </div>
-          <span class="text-[10px] text-amber-400 flex items-center gap-1"><i class="bi bi-exclamation-triangle"></i> Réassort urgent</span>
+          <span class="text-[10px] text-cyan-400 flex items-center gap-1"><i class="bi bi-exclamation-triangle"></i> Réassort urgent</span>
         </div>
       </div>
 
       <!-- Stat 4 -->
       <div class="glass-card p-4 rounded-2xl border border-white/10 flex items-center gap-3.5">
-        <div class="w-11 h-11 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-lg">
+        <div class="w-11 h-11 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-lg">
           <i class="bi bi-people"></i>
         </div>
         <div>
           <span class="text-[11px] text-slate-400 block font-medium">Patients Servis</span>
           <div class="text-lg lg:text-xl font-bold font-mono text-white flex items-baseline gap-1">
-            <span id="stat-patients">114</span> <span class="text-xs text-emerald-400 font-sans">visiteurs</span>
+            <span id="stat-patients">114</span> <span class="text-xs text-cyan-400 font-sans">visiteurs</span>
           </div>
-          <span class="text-[10px] text-emerald-400 flex items-center gap-1"><i class="bi bi-check-circle"></i> 0 incident détecté</span>
+          <span class="text-[10px] text-cyan-400 flex items-center gap-1"><i class="bi bi-check-circle"></i> 0 incident détecté</span>
         </div>
       </div>
     </div>
@@ -243,10 +243,10 @@
           <div class="glass-card p-5 rounded-3xl border border-white/10 space-y-4">
             <div class="flex items-center justify-between">
               <h2 class="text-sm font-bold text-white flex items-center gap-2 font-display">
-                <i class="bi bi-camera-viewfinder text-teal-400"></i>
+                <i class="bi bi-camera-viewfinder text-cyan-400"></i>
                 Numériseur d'Ordonnance
               </h2>
-              <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-teal-500/10 text-teal-300 border border-teal-500/25">Gemini 1.5 Vision</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-blue-500/10 text-teal-300 border border-blue-500/25">Gemini 1.5 Vision</span>
             </div>
 
             <!-- Image Canvas / Scanner Box -->
@@ -260,21 +260,21 @@
               <div id="ocr-boxes" class="absolute inset-0 pointer-events-none hidden">
                 <div class="ocr-box absolute top-[28%] left-[10%] w-[78%] h-[12%] rounded-md pointer-events-auto flex items-center justify-between px-2 text-[10px] text-teal-200">
                   <span class="font-mono bg-slate-900/90 px-1 rounded">Amoxicilline 1g · 98%</span>
-                  <i class="bi bi-check-circle-fill text-emerald-400"></i>
+                  <i class="bi bi-check-circle-fill text-cyan-400"></i>
                 </div>
                 <div class="ocr-box absolute top-[44%] left-[10%] w-[78%] h-[12%] rounded-md pointer-events-auto flex items-center justify-between px-2 text-[10px] text-teal-200">
                   <span class="font-mono bg-slate-900/90 px-1 rounded">Doliprane 1000mg · 99%</span>
-                  <i class="bi bi-check-circle-fill text-emerald-400"></i>
+                  <i class="bi bi-check-circle-fill text-cyan-400"></i>
                 </div>
                 <div class="ocr-box absolute top-[60%] left-[10%] w-[78%] h-[12%] rounded-md pointer-events-auto flex items-center justify-between px-2 text-[10px] text-teal-200">
                   <span class="font-mono bg-slate-900/90 px-1 rounded">Inexium 20mg · 97%</span>
-                  <i class="bi bi-check-circle-fill text-emerald-400"></i>
+                  <i class="bi bi-check-circle-fill text-cyan-400"></i>
                 </div>
               </div>
 
               <!-- Upload Placeholder -->
               <div id="scanner-placeholder" class="text-center p-6 space-y-3">
-                <div class="w-14 h-14 rounded-2xl bg-teal-500/10 border border-teal-500/25 flex items-center justify-center text-teal-400 text-2xl mx-auto shadow-md">
+                <div class="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/25 flex items-center justify-center text-cyan-400 text-2xl mx-auto shadow-md">
                   <i class="bi bi-cloud-arrow-up"></i>
                 </div>
                 <div>
@@ -287,8 +287,8 @@
             <!-- Action Buttons -->
             <div class="space-y-2">
               <div class="grid grid-cols-2 gap-2">
-                <button onclick="loadSample(1)" class="px-3 py-2.5 rounded-xl bg-slate-900 border border-white/10 hover:border-teal-500 text-xs font-semibold text-slate-200 hover:text-white transition flex items-center justify-center gap-1.5">
-                  <i class="bi bi-file-medical text-teal-400"></i>
+                <button onclick="loadSample(1)" class="px-3 py-2.5 rounded-xl bg-slate-900 border border-white/10 hover:border-blue-500 text-xs font-semibold text-slate-200 hover:text-white transition flex items-center justify-center gap-1.5">
+                  <i class="bi bi-file-medical text-cyan-400"></i>
                   <span>Ordonnance Standard</span>
                 </button>
                 <button onclick="loadSample(2)" class="px-3 py-2.5 rounded-xl bg-slate-900 border border-white/10 hover:border-rose-500 text-xs font-semibold text-rose-300 hover:text-white transition flex items-center justify-center gap-1.5">
@@ -326,7 +326,7 @@
               <div>
                 <span class="text-slate-500 text-[10px] block font-mono">MÉDECIN PRESCRIPTEUR</span>
                 <span id="doc-name" class="font-bold text-white flex items-center gap-1.5 mt-0.5">
-                  <i class="bi bi-person-badge text-teal-400"></i> Dr. Amine Benjelloun
+                  <i class="bi bi-person-badge text-cyan-400"></i> Dr. Amine Benjelloun
                 </span>
                 <span class="text-[10px] text-slate-400">Cardiologie &amp; Médecine Générale (Rabat)</span>
               </div>
@@ -365,15 +365,15 @@
             <div id="dispense-panel" class="hidden pt-3 border-t border-white/10 space-y-3">
               <div class="flex items-center justify-between text-xs">
                 <span class="text-slate-400">Total Prescription Médicale (TTC) :</span>
-                <span id="dispense-total" class="text-lg font-bold font-mono text-teal-400">142.50 MAD</span>
+                <span id="dispense-total" class="text-lg font-bold font-mono text-cyan-400">142.50 MAD</span>
               </div>
 
               <div class="grid grid-cols-2 gap-2">
-                <button onclick="printReceiptModal()" class="py-2.5 rounded-xl bg-slate-900 border border-white/10 hover:border-teal-500 text-xs font-semibold text-slate-200 hover:text-white transition flex items-center justify-center gap-1.5">
+                <button onclick="printReceiptModal()" class="py-2.5 rounded-xl bg-slate-900 border border-white/10 hover:border-blue-500 text-xs font-semibold text-slate-200 hover:text-white transition flex items-center justify-center gap-1.5">
                   <i class="bi bi-printer"></i>
                   <span>Imprimer Ticket / Facture</span>
                 </button>
-                <button onclick="confirmDispense()" class="py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-xs font-bold text-white transition shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-1.5">
+                <button onclick="confirmDispense()" class="py-2.5 rounded-xl bg-blue-600 hover:bg-cyan-500 text-xs font-bold text-white transition shadow-lg shadow-emerald-500/20 flex items-center justify-center gap-1.5">
                   <i class="bi bi-check2-circle text-sm"></i>
                   <span>Valider &amp; Déstocker</span>
                 </button>
@@ -390,7 +390,7 @@
         <div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
           <div>
             <h2 class="text-base font-bold text-white flex items-center gap-2 font-display">
-              <i class="bi bi-box-seam text-teal-400"></i>
+              <i class="bi bi-box-seam text-cyan-400"></i>
               Gestion de Stock Officinal &amp; Lecteur Code-Barres
             </h2>
             <p class="text-xs text-slate-400">Contrôle des péremptions, numéros de lots, alertes de seuil et déstockage instantané</p>
@@ -398,7 +398,7 @@
 
           <!-- Barcode Quick Scan Trigger -->
           <div class="flex items-center gap-2">
-            <button onclick="simulateBarcodeScan()" class="px-3.5 py-2 rounded-xl bg-teal-600 hover:bg-teal-500 text-white font-semibold text-xs transition shadow-md shadow-teal-500/25 flex items-center gap-2">
+            <button onclick="simulateBarcodeScan()" class="px-3.5 py-2 rounded-xl bg-blue-600 hover:bg-teal-500 text-white font-semibold text-xs transition shadow-md shadow-teal-500/25 flex items-center gap-2">
               <i class="bi bi-upc-scan text-sm"></i>
               <span>Simuler Scan Code-Barres</span>
             </button>
@@ -409,9 +409,9 @@
         <div class="flex flex-col sm:flex-row items-center gap-2">
           <div class="relative flex-1 w-full">
             <i class="bi bi-search absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500 text-xs"></i>
-            <input type="text" id="inventory-search" oninput="filterInventory()" placeholder="Rechercher médicament par DCI, marque ou code-barres..." class="w-full pl-9 pr-4 py-2 rounded-xl bg-slate-950 border border-white/10 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-teal-500 transition">
+            <input type="text" id="inventory-search" oninput="filterInventory()" placeholder="Rechercher médicament par DCI, marque ou code-barres..." class="w-full pl-9 pr-4 py-2 rounded-xl bg-slate-950 border border-white/10 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 transition">
           </div>
-          <select id="inventory-category" onchange="filterInventory()" class="w-full sm:w-48 px-3 py-2 rounded-xl bg-slate-950 border border-white/10 text-xs text-slate-300 focus:outline-none focus:border-teal-500 transition">
+          <select id="inventory-category" onchange="filterInventory()" class="w-full sm:w-48 px-3 py-2 rounded-xl bg-slate-950 border border-white/10 text-xs text-slate-300 focus:outline-none focus:border-blue-500 transition">
             <option value="all">Toutes Catégories</option>
             <option value="Antibiotiques">Antibiotiques</option>
             <option value="Antalgiques">Antalgiques</option>
@@ -469,7 +469,7 @@
         <div class="lg:col-span-8 glass-card p-5 rounded-3xl border border-white/10 space-y-3">
           <div class="flex items-center justify-between">
             <h2 class="text-sm font-bold text-white flex items-center gap-2 font-display">
-              <i class="bi bi-graph-up-arrow text-teal-400"></i>
+              <i class="bi bi-graph-up-arrow text-cyan-400"></i>
               Évolution du Chiffre d'Affaires (MAD) — 7 Derniers Jours
             </h2>
             <span class="text-xs text-slate-400 font-mono">Novembre 2026</span>
@@ -652,7 +652,7 @@
       btnScan.disabled = true;
       laser.classList.remove('hidden');
       badge.textContent = "Analyse Gemini Vision OCR en cours...";
-      badge.className = "px-2.5 py-1 rounded-full text-[10px] font-mono font-semibold bg-amber-500/10 text-amber-300 border border-amber-500/30 animate-pulse";
+      badge.className = "px-2.5 py-1 rounded-full text-[10px] font-mono font-semibold bg-blue-500/10 text-amber-300 border border-blue-500/30 animate-pulse";
       playSound('beep');
 
       setTimeout(() => {
@@ -667,7 +667,7 @@
             { name: "Inexium 20mg", dose: "1 gélule le matin à jeun", dur: "14 jours", qty: 28, price: 68.00 }
           ];
           badge.textContent = "OCR Validé (99.2%)";
-          badge.className = "px-2.5 py-1 rounded-full text-[10px] font-mono font-semibold bg-emerald-500/10 text-emerald-300 border border-emerald-500/30";
+          badge.className = "px-2.5 py-1 rounded-full text-[10px] font-mono font-semibold bg-cyan-500/10 text-sky-300 border border-cyan-500/30";
           playSound('success');
         } else {
           // Contraindicated sample
@@ -701,7 +701,7 @@
           </td>
           <td class="py-2.5 px-3 font-mono text-cyan-300">${m.dose}</td>
           <td class="py-2.5 px-3 text-slate-400">${m.dur}</td>
-          <td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded text-[10px] bg-emerald-500/10 text-emerald-400">${m.qty} disp.</span></td>
+          <td class="py-2.5 px-3"><span class="px-2 py-0.5 rounded text-[10px] bg-cyan-500/10 text-cyan-400">${m.qty} disp.</span></td>
           <td class="py-2.5 px-3 text-right font-mono text-white">${m.price.toFixed(2)} MAD</td>
         `;
         tbody.appendChild(tr);
@@ -715,9 +715,9 @@
       playSound('success');
       alert(`Délivrance confirmée avec succès !\nDéstockage automatique effectué pour ${currentMedications.length} médicaments.\nMontant enregistré : ${document.getElementById('dispense-total').textContent}`);
       document.getElementById('dispense-panel').classList.add('hidden');
-      document.getElementById('ocr-table-body').innerHTML = `<tr><td colspan="5" class="py-8 text-center text-emerald-400 font-semibold"><i class="bi bi-check-all text-lg block mb-1"></i>Prescription validée et déstockée avec succès.</td></tr>`;
+      document.getElementById('ocr-table-body').innerHTML = `<tr><td colspan="5" class="py-8 text-center text-cyan-400 font-semibold"><i class="bi bi-check-all text-lg block mb-1"></i>Prescription validée et déstockée avec succès.</td></tr>`;
       document.getElementById('ocr-status-badge').textContent = "Terminé";
-      document.getElementById('ocr-status-badge').className = "px-2.5 py-1 rounded-full text-[10px] font-mono bg-emerald-500/10 text-emerald-300";
+      document.getElementById('ocr-status-badge').className = "px-2.5 py-1 rounded-full text-[10px] font-mono bg-cyan-500/10 text-sky-300";
     }
 
     function simulateBarcodeScan() {
@@ -744,13 +744,13 @@
           <td class="py-2.5 px-3 font-mono text-[11px] text-teal-300">${item.lot}</td>
           <td class="py-2.5 px-3 text-slate-400">${item.exp}</td>
           <td class="py-2.5 px-3 text-center">
-            <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold font-mono ${isLow ? 'bg-amber-500/20 text-amber-300 border border-amber-500/30' : 'bg-emerald-500/10 text-emerald-400'}">
+            <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold font-mono ${isLow ? 'bg-blue-500/20 text-amber-300 border border-blue-500/30' : 'bg-cyan-500/10 text-cyan-400'}">
               ${item.qty} un.
             </span>
           </td>
           <td class="py-2.5 px-3 text-right font-mono font-bold text-white">${item.price.toFixed(2)}</td>
           <td class="py-2.5 px-3 text-center">
-            <button onclick="decrementStock('${item.code}')" class="px-2 py-1 rounded-lg bg-slate-800 hover:bg-teal-600 text-[10px] text-slate-300 hover:text-white transition" title="Sortie manuelle -1">
+            <button onclick="decrementStock('${item.code}')" class="px-2 py-1 rounded-lg bg-slate-800 hover:bg-blue-600 text-[10px] text-slate-300 hover:text-white transition" title="Sortie manuelle -1">
               -1 Vente
             </button>
           </td>
@@ -876,8 +876,8 @@
     function setLang(lang) {
       playSound('beep');
       const isFr = lang === 'fr';
-      document.getElementById('btn-fr').className = isFr ? "px-2 py-1 rounded-lg font-semibold bg-teal-600 text-white transition" : "px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white transition";
-      document.getElementById('btn-en').className = !isFr ? "px-2 py-1 rounded-lg font-semibold bg-teal-600 text-white transition" : "px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white transition";
+      document.getElementById('btn-fr').className = isFr ? "px-2 py-1 rounded-lg font-semibold bg-blue-600 text-white transition" : "px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white transition";
+      document.getElementById('btn-en').className = !isFr ? "px-2 py-1 rounded-lg font-semibold bg-blue-600 text-white transition" : "px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white transition";
 
       document.getElementById('tab-text-ocr').textContent = isFr ? "Scanner Ordonnance (IA Vision OCR)" : "Scan Prescription (AI Vision OCR)";
       document.getElementById('tab-text-inventory').textContent = isFr ? "Gestion des Stocks & Code-barres" : "Inventory & Barcode Scanner";

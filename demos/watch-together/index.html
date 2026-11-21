@@ -31,9 +31,9 @@
           },
           colors: {
             cinema: {
-              violet: '#8b5cf6',
+              primary: '#2563eb',
               cyan: '#06b6d4',
-              emerald: '#10b981',
+              cyan: '#06b6d4',
               dark: '#07070a',
               card: '#0f0f17'
             }
@@ -81,24 +81,24 @@
     }
   </style>
 </head>
-<body class="min-h-screen flex flex-col selection:bg-violet-600 selection:text-white">
+<body class="min-h-screen flex flex-col selection:bg-blue-600 selection:text-white">
 
   <!-- ==================== HEADER ==================== -->
   <header class="sticky top-0 z-50 glass-panel border-b border-white/10 px-4 lg:px-8 py-3 flex items-center justify-between">
     <div class="flex items-center gap-3">
-      <a href="../../index.html" class="flex items-center gap-2 px-2.5 py-1.5 rounded-xl bg-zinc-900 border border-white/10 hover:border-violet-500 text-xs text-zinc-300 hover:text-white transition group" title="Return to Portfolio">
+      <a href="../../index.html" class="flex items-center gap-2 px-2.5 py-1.5 rounded-xl bg-zinc-900 border border-white/10 hover:border-blue-500 text-xs text-zinc-300 hover:text-white transition group" title="Return to Portfolio">
         <i class="fa-solid fa-arrow-left text-[11px] group-hover:-translate-x-0.5 transition"></i>
         <span>Portfolio</span>
       </a>
       <div class="h-4 w-px bg-white/10"></div>
       <div class="flex items-center gap-2.5">
-        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-violet-600 to-cyan-500 flex items-center justify-center text-white shadow-lg shadow-violet-500/25">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 to-cyan-500 flex items-center justify-center text-white shadow-lg shadow-blue-500/25">
           <i class="fa-solid fa-film text-sm"></i>
         </div>
         <div>
           <div class="flex items-center gap-2">
-            <span class="font-extrabold text-sm tracking-tight text-white font-display">Watch Together <span class="text-violet-400">PWA</span></span>
-            <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-violet-500/10 text-violet-300 border border-violet-500/25">Mesh Voice &amp; Cinema Sync</span>
+            <span class="font-extrabold text-sm tracking-tight text-white font-display">Watch Together <span class="text-cyan-400">PWA</span></span>
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-blue-500/10 text-cyan-300 border border-blue-500/25">Mesh Voice &amp; Cinema Sync</span>
           </div>
           <p class="text-[10px] text-zinc-400">By 0dh4m (Adham Cherkaoui Eddeqaqi) · Sub-Second Drift Engine</p>
         </div>
@@ -108,12 +108,12 @@
     <!-- Right Header Actions -->
     <div class="flex items-center gap-3">
       <div class="hidden md:flex items-center gap-2 px-3 py-1.5 rounded-full bg-zinc-900/90 border border-white/10 text-xs">
-        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        <span class="text-zinc-300">Room Status: <strong class="text-violet-300">Host (VIP Room #SYNC-01)</strong></span>
+        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+        <span class="text-zinc-300">Room Status: <strong class="text-cyan-300">Host (VIP Room #SYNC-01)</strong></span>
       </div>
 
-      <a href="https://github.com/0dh4m/watch-together" target="_blank" class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-zinc-900 border border-white/10 hover:border-violet-500 text-xs text-zinc-200 hover:text-white transition group shadow">
-        <i class="bi bi-github text-sm text-violet-400 group-hover:rotate-12 transition"></i>
+      <a href="https://github.com/0dh4m/watch-together" target="_blank" class="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-zinc-900 border border-white/10 hover:border-blue-500 text-xs text-zinc-200 hover:text-white transition group shadow">
+        <i class="bi bi-github text-sm text-cyan-400 group-hover:rotate-12 transition"></i>
         <span class="font-semibold">GitHub Source</span>
       </a>
     </div>
@@ -142,25 +142,25 @@
             <div class="absolute bottom-0 inset-x-0 p-3 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex flex-col gap-2 transition duration-300">
               <!-- Progress Bar -->
               <div class="w-full h-1.5 bg-white/20 rounded-full overflow-hidden cursor-pointer" onclick="seekVideo(event)">
-                <div id="video-progress" class="h-full bg-gradient-to-r from-violet-500 to-cyan-400 w-0 transition-all duration-100"></div>
+                <div id="video-progress" class="h-full bg-gradient-to-r from-blue-500 to-cyan-400 w-0 transition-all duration-100"></div>
               </div>
 
               <!-- Controls Line -->
               <div class="flex items-center justify-between text-xs text-white">
                 <div class="flex items-center gap-3">
-                  <button id="btn-play" onclick="togglePlay()" class="w-8 h-8 rounded-lg bg-violet-600 hover:bg-violet-500 flex items-center justify-center text-white transition shadow">
+                  <button id="btn-play" onclick="togglePlay()" class="w-8 h-8 rounded-lg bg-blue-600 hover:bg-blue-500 flex items-center justify-center text-white transition shadow">
                     <i id="play-icon" class="fa-solid fa-play text-xs"></i>
                   </button>
                   <span id="video-time" class="font-mono text-[11px] text-zinc-300">00:00 / 12:14</span>
-                  <div class="flex items-center gap-1.5 text-[10px] text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
-                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <div class="flex items-center gap-1.5 text-[10px] text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded-full border border-cyan-500/20">
+                    <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
                     <span>Sub-Second Sync Active (<span id="drift-ms">14</span>ms)</span>
                   </div>
                 </div>
 
                 <!-- Video Select & Fullscreen -->
                 <div class="flex items-center gap-2">
-                  <select id="video-select" onchange="switchVideoSource()" class="px-2 py-1 rounded-lg bg-zinc-900 border border-white/10 text-[11px] text-zinc-300 focus:outline-none focus:border-violet-500">
+                  <select id="video-select" onchange="switchVideoSource()" class="px-2 py-1 rounded-lg bg-zinc-900 border border-white/10 text-[11px] text-zinc-300 focus:outline-none focus:border-blue-500">
                     <option value="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4">Tears of Steel (Sci-Fi)</option>
                     <option value="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4">Sintel (Animation)</option>
                     <option value="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">Big Buck Bunny</option>
@@ -186,9 +186,9 @@
             <!-- Sync Offset Tuning -->
             <div class="flex items-center gap-2 bg-zinc-900/90 px-3 py-1.5 rounded-xl border border-white/10 font-mono text-[11px]">
               <span class="text-zinc-400">Drift Offset:</span>
-              <button onclick="adjustOffset(-50)" class="w-5 h-5 rounded bg-zinc-800 hover:bg-violet-600 text-white flex items-center justify-center">-</button>
-              <span id="offset-val" class="text-violet-300 font-bold">0 ms</span>
-              <button onclick="adjustOffset(+50)" class="w-5 h-5 rounded bg-zinc-800 hover:bg-violet-600 text-white flex items-center justify-center">+</button>
+              <button onclick="adjustOffset(-50)" class="w-5 h-5 rounded bg-zinc-800 hover:bg-blue-600 text-white flex items-center justify-center">-</button>
+              <span id="offset-val" class="text-cyan-300 font-bold">0 ms</span>
+              <button onclick="adjustOffset(+50)" class="w-5 h-5 rounded bg-zinc-800 hover:bg-blue-600 text-white flex items-center justify-center">+</button>
             </div>
           </div>
         </div>
@@ -200,7 +200,7 @@
               <i class="bi bi-activity text-cyan-400"></i>
               Dynamic Drift Compensation Graph (Sub-Second Synchronizer)
             </h3>
-            <span class="text-[10px] font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full">Max Threshold: ±1.5s</span>
+            <span class="text-[10px] font-mono text-cyan-400 bg-cyan-500/10 px-2 py-0.5 rounded-full">Max Threshold: ±1.5s</span>
           </div>
           <div class="h-28 w-full bg-zinc-950/80 rounded-2xl p-2 border border-white/5 relative flex items-center">
             <canvas id="drift-canvas" class="w-full h-full"></canvas>
@@ -215,28 +215,28 @@
         <div class="glass-panel p-4 rounded-3xl border border-white/10 space-y-3">
           <div class="flex items-center justify-between border-b border-white/10 pb-2.5">
             <h3 class="text-xs font-bold text-white uppercase tracking-wider flex items-center gap-2">
-              <i class="bi bi-mic text-violet-400"></i>
+              <i class="bi bi-mic text-cyan-400"></i>
               WebRTC Mesh Voice Room
             </h3>
-            <span class="text-[10px] font-mono bg-violet-500/15 text-violet-300 px-2 py-0.5 rounded-full border border-violet-500/25">4 Peers Connected</span>
+            <span class="text-[10px] font-mono bg-blue-500/15 text-cyan-300 px-2 py-0.5 rounded-full border border-blue-500/25">4 Peers Connected</span>
           </div>
 
           <!-- Peers Grid -->
           <div class="grid grid-cols-2 gap-2 text-xs">
             <!-- Peer 1: You (Host) -->
-            <div class="p-2.5 rounded-2xl bg-zinc-900/90 border border-emerald-500/30 flex items-center gap-2.5">
-              <div class="w-8 h-8 rounded-full bg-emerald-600 flex items-center justify-center text-white font-bold text-xs speaking-pulse">
+            <div class="p-2.5 rounded-2xl bg-zinc-900/90 border border-cyan-500/30 flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-xs speaking-pulse">
                 AC
               </div>
               <div class="truncate">
                 <span class="font-bold text-white block truncate text-[11px]">Adham (Host)</span>
-                <span class="text-[9px] text-emerald-400 flex items-center gap-1"><i class="bi bi-soundwave"></i> Speaking...</span>
+                <span class="text-[9px] text-cyan-400 flex items-center gap-1"><i class="bi bi-soundwave"></i> Speaking...</span>
               </div>
             </div>
 
             <!-- Peer 2: Alice -->
             <div class="p-2.5 rounded-2xl bg-zinc-900/90 border border-white/10 flex items-center gap-2.5">
-              <div class="w-8 h-8 rounded-full bg-violet-600 flex items-center justify-center text-white font-bold text-xs">
+              <div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-xs">
                 AL
               </div>
               <div class="truncate">
@@ -258,7 +258,7 @@
 
             <!-- Peer 4: Yassine -->
             <div class="p-2.5 rounded-2xl bg-zinc-900/90 border border-white/10 flex items-center gap-2.5">
-              <div class="w-8 h-8 rounded-full bg-amber-600 flex items-center justify-center text-white font-bold text-xs">
+              <div class="w-8 h-8 rounded-full bg-cyan-600 flex items-center justify-center text-white font-bold text-xs">
                 YE
               </div>
               <div class="truncate">
@@ -270,12 +270,12 @@
 
           <!-- Voice Action Controls -->
           <div class="flex items-center justify-between pt-1">
-            <button id="btn-mic" onclick="toggleMic()" class="px-3 py-1.5 rounded-xl bg-zinc-900 hover:bg-emerald-600 border border-white/10 text-xs text-zinc-200 hover:text-white transition flex items-center gap-1.5">
-              <i id="mic-icon" class="bi bi-mic-fill text-emerald-400"></i>
+            <button id="btn-mic" onclick="toggleMic()" class="px-3 py-1.5 rounded-xl bg-zinc-900 hover:bg-blue-600 border border-white/10 text-xs text-zinc-200 hover:text-white transition flex items-center gap-1.5">
+              <i id="mic-icon" class="bi bi-mic-fill text-cyan-400"></i>
               <span id="mic-text">Microphone ON</span>
             </button>
-            <button onclick="alert('Simulation: Screen Share stream initialized via WebRTC video track.')" class="px-3 py-1.5 rounded-xl bg-zinc-900 hover:bg-violet-600 border border-white/10 text-xs text-zinc-200 hover:text-white transition flex items-center gap-1.5">
-              <i class="bi bi-display text-violet-400"></i>
+            <button onclick="alert('Simulation: Screen Share stream initialized via WebRTC video track.')" class="px-3 py-1.5 rounded-xl bg-zinc-900 hover:bg-blue-600 border border-white/10 text-xs text-zinc-200 hover:text-white transition flex items-center gap-1.5">
+              <i class="bi bi-display text-cyan-400"></i>
               <span>Screen Share</span>
             </button>
           </div>
@@ -295,7 +295,7 @@
           <div id="chat-messages" class="flex-1 overflow-y-auto space-y-2 text-xs pr-1 scrollbar-thin">
             <div class="p-2 rounded-xl bg-zinc-900/70 border border-white/5 space-y-0.5">
               <div class="flex items-center justify-between text-[10px]">
-                <strong class="text-violet-400">Alice M.</strong>
+                <strong class="text-cyan-400">Alice M.</strong>
                 <span class="text-zinc-500">00:41</span>
               </div>
               <p class="text-zinc-200">The video quality is incredible! Subtitles look so crisp 🔥</p>
@@ -311,8 +311,8 @@
 
           <!-- Chat Input -->
           <form onsubmit="handleChatSubmit(event)" class="flex items-center gap-1.5 pt-1">
-            <input type="text" id="chat-input" placeholder="Say something to the room..." class="flex-1 px-3 py-2 rounded-xl bg-zinc-950 border border-white/10 text-xs text-white placeholder-zinc-500 focus:outline-none focus:border-violet-500 transition">
-            <button type="submit" class="w-9 h-9 rounded-xl bg-violet-600 hover:bg-violet-500 text-white flex items-center justify-center transition shadow">
+            <input type="text" id="chat-input" placeholder="Say something to the room..." class="flex-1 px-3 py-2 rounded-xl bg-zinc-950 border border-white/10 text-xs text-white placeholder-zinc-500 focus:outline-none focus:border-blue-500 transition">
+            <button type="submit" class="w-9 h-9 rounded-xl bg-blue-600 hover:bg-blue-500 text-white flex items-center justify-center transition shadow">
               <i class="bi bi-send text-xs"></i>
             </button>
           </form>
@@ -433,7 +433,7 @@
       const icon = document.getElementById('mic-icon');
       const text = document.getElementById('mic-text');
       if (micOn) {
-        icon.className = "bi bi-mic-fill text-emerald-400";
+        icon.className = "bi bi-mic-fill text-cyan-400";
         text.textContent = "Microphone ON";
       } else {
         icon.className = "bi bi-mic-mute-fill text-rose-400";
@@ -472,7 +472,7 @@
       div.className = "p-2 rounded-xl bg-zinc-900/70 border border-white/5 space-y-0.5 animate-fadeIn";
       div.innerHTML = `
         <div class="flex items-center justify-between text-[10px]">
-          <strong class="${isHost ? 'text-emerald-400' : 'text-violet-400'}">${author}</strong>
+          <strong class="${isHost ? 'text-cyan-400' : 'text-cyan-400'}">${author}</strong>
           <span class="text-zinc-500">${new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</span>
         </div>
         <p class="text-zinc-200">${text}</p>

@@ -72,7 +72,7 @@
       </a>
       <div class="h-4 w-px bg-white/10"></div>
       <div class="flex items-center gap-2.5">
-        <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-600 to-violet-500 flex items-center justify-center text-white shadow-md shadow-indigo-500/20">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-indigo-600 to-blue-500 flex items-center justify-center text-white shadow-md shadow-indigo-500/20">
           <i class="fa-solid fa-book-bookmark text-xs"></i>
         </div>
         <div>
@@ -122,8 +122,8 @@
 
       <div class="glass-card p-5 rounded-3xl border border-white/10 space-y-1">
         <span class="text-slate-400 text-xs font-mono uppercase">Retards / Relances</span>
-        <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 font-mono">5</div>
-        <span class="text-[11px] text-amber-400 font-mono">Alertes automatiques</span>
+        <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400 font-mono">5</div>
+        <span class="text-[11px] text-cyan-400 font-mono">Alertes automatiques</span>
       </div>
     </div>
   </div>
@@ -239,7 +239,7 @@
           </h2>
           <p class="text-xs text-slate-400">Suivi des cotisations et quota d'emprunt simultané (Max 3 livres).</p>
         </div>
-        <span class="px-2.5 py-1 rounded-full text-xs font-mono font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+        <span class="px-2.5 py-1 rounded-full text-xs font-mono font-bold bg-cyan-500/10 text-emerald-400 border border-cyan-500/20">
           618 Membres
         </span>
       </div>
@@ -326,7 +326,7 @@
           <td class="py-3 px-3"><span class="px-2 py-0.5 rounded text-[11px] bg-indigo-500/10 text-indigo-300 border border-indigo-500/25">${b.category}</span></td>
           <td class="py-3 px-3 font-mono font-bold ${b.stock > 0 ? 'text-emerald-400' : 'text-rose-400'}">${b.stock} ex.</td>
           <td class="py-3 px-3">
-            <span class="px-2 py-0.5 rounded text-[10px] font-semibold ${b.stock > 0 ? 'bg-emerald-500/20 text-emerald-300' : 'bg-rose-500/20 text-rose-300'}">
+            <span class="px-2 py-0.5 rounded text-[10px] font-semibold ${b.stock > 0 ? 'bg-cyan-500/20 text-emerald-300' : 'bg-rose-500/20 text-rose-300'}">
               ${b.stock > 0 ? 'Disponible' : 'Emprunté'}
             </span>
           </td>
@@ -377,7 +377,7 @@
           <p class="text-xs text-slate-400 font-mono">${m.email}</p>
           <div class="pt-2 border-t border-white/5 flex items-center justify-between text-xs">
             <span class="text-slate-400">Prêts actifs : <strong class="text-indigo-400">${m.activeLoans} / ${m.maxLoans}</strong></span>
-            <span class="px-2 py-0.5 rounded text-[10px] font-semibold ${m.status.includes('Retard') ? 'bg-rose-500/20 text-rose-300' : 'bg-emerald-500/20 text-emerald-300'}">
+            <span class="px-2 py-0.5 rounded text-[10px] font-semibold ${m.status.includes('Retard') ? 'bg-rose-500/20 text-rose-300' : 'bg-cyan-500/20 text-emerald-300'}">
               ${m.status}
             </span>
           </div>

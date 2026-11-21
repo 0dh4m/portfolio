@@ -113,7 +113,7 @@ const projectsData = [
     },
     tech: ["PHP OOP", "MySQL", "Gemini Vision OCR", "Chart.js", "Web Audio API", "Tailwind CSS"],
     demo: "demos/pharmacare/index.html",
-    github: "https://github.com/0dh4m/portfolio"
+    github: "https://github.com/0dh4m/pharmacare-pro-ai"
   },
 
   {
@@ -160,7 +160,7 @@ const projectsData = [
       fr: "Plateforme web complète de streaming de films et séries avec intégration de lecteur vidéo HD, internationalisation en 4 langues (Arabe RTL, Anglais, Français, Italien), recherche instantanée, favoris et suivi analytique du trafic."
     },
     tech: ["PHP 8", "MySQL / JSON DB", "Multilingual i18n", "Responsive Cinema UI", "Traffic Analytics"],
-    demo: "https://github.com/0dh4m/movies-streaming-platform",
+    demo: "demos/movies/index.html",
     github: "https://github.com/0dh4m/movies-streaming-platform"
   }
 

@@ -31,9 +31,9 @@
           },
           colors: {
             riad: {
-              gold: '#d97706',
-              amber: '#f59e0b',
-              emerald: '#10b981',
+              primary: '#2563eb',
+              cyan: '#06b6d4',
+              sky: '#38bdf8',
               dark: '#080c14',
               card: '#0f172a'
             }
@@ -59,33 +59,33 @@
       border: 1px solid rgba(255, 255, 255, 0.08);
     }
     .glass-card:hover {
-      border-color: rgba(217, 119, 6, 0.35);
+      border-color: rgba(37, 99, 235, 0.35);
     }
     .tab-btn.active {
-      background: linear-gradient(135deg, #d97706 0%, #f59e0b 100%);
+      background: linear-gradient(135deg, #2563eb 0%, #06b6d4 100%);
       color: white;
-      box-shadow: 0 4px 18px rgba(217, 119, 6, 0.4);
+      box-shadow: 0 4px 18px rgba(37, 99, 235, 0.4);
     }
   </style>
 </head>
-<body class="min-h-screen flex flex-col selection:bg-amber-600 selection:text-white">
+<body class="min-h-screen flex flex-col selection:bg-blue-600 selection:text-white">
 
   <!-- ==================== HEADER ==================== -->
   <header class="sticky top-0 z-50 glass-card border-b border-white/10 px-4 lg:px-8 py-3 flex items-center justify-between">
     <div class="flex items-center gap-3">
-      <a href="../../index.html" class="flex items-center gap-2 px-2.5 py-1.5 rounded-xl bg-slate-900 border border-white/10 hover:border-amber-500 text-xs text-slate-300 hover:text-white transition group" title="Retour au Portfolio">
+      <a href="../../index.html" class="flex items-center gap-2 px-2.5 py-1.5 rounded-xl bg-slate-900 border border-white/10 hover:border-blue-500 text-xs text-slate-300 hover:text-white transition group" title="Retour au Portfolio">
         <i class="fa-solid fa-arrow-left text-[11px] group-hover:-translate-x-0.5 transition"></i>
         <span>Portfolio</span>
       </a>
       <div class="h-4 w-px bg-white/10"></div>
       <div class="flex items-center gap-2.5">
-        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-amber-600 to-amber-400 flex items-center justify-center text-white shadow-lg shadow-amber-500/25">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 to-cyan-500 flex items-center justify-center text-white shadow-lg shadow-blue-500/25">
           <i class="bi bi-building text-base"></i>
         </div>
         <div>
           <div class="flex items-center gap-2">
             <span class="font-extrabold text-sm tracking-tight text-white font-display">Hôtel &amp; Riad Manager</span>
-            <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-amber-500/10 text-amber-300 border border-amber-500/25">SARL HIND ET PIERRE</span>
+            <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-blue-500/10 text-blue-300 border border-blue-500/25">SARL HIND ET PIERRE</span>
           </div>
           <p class="text-[10px] text-slate-400">Solution Commerciale Développée par 0dh4m (Adham Cherkaoui Eddeqaqi) · Rabat</p>
         </div>
@@ -94,13 +94,13 @@
 
     <!-- Right Header Actions -->
     <div class="flex items-center gap-3">
-      <a href="https://github.com/0dh4m/hotel-management-system" target="_blank" class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-900 border border-white/10 hover:border-amber-500 text-xs text-slate-200 hover:text-white transition group shadow">
-        <i class="bi bi-github text-sm text-amber-400 group-hover:rotate-12 transition"></i>
+      <a href="https://github.com/0dh4m/hotel-management-system" target="_blank" class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-900 border border-white/10 hover:border-blue-500 text-xs text-slate-200 hover:text-white transition group shadow">
+        <i class="bi bi-github text-sm text-cyan-400 group-hover:rotate-12 transition"></i>
         <span class="font-semibold">GitHub Source Code</span>
       </a>
 
       <div class="flex items-center rounded-xl bg-slate-900 border border-white/10 p-0.5 text-xs">
-        <button onclick="setLang('fr')" id="btn-fr" class="px-2 py-1 rounded-lg font-semibold bg-amber-600 text-white transition">FR</button>
+        <button onclick="setLang('fr')" id="btn-fr" class="px-2 py-1 rounded-lg font-semibold bg-blue-600 text-white transition">FR</button>
         <button onclick="setLang('en')" id="btn-en" class="px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white transition">EN</button>
       </div>
     </div>
@@ -111,21 +111,21 @@
     <div class="grid grid-cols-2 md:grid-cols-4 gap-3 lg:gap-4">
       <!-- Stat 1 -->
       <div class="glass-card p-4 rounded-2xl border border-white/10 flex items-center gap-3.5">
-        <div class="w-11 h-11 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-lg">
+        <div class="w-11 h-11 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-cyan-400 text-lg">
           <i class="bi bi-door-open"></i>
         </div>
         <div>
           <span class="text-[11px] text-slate-400 block font-medium">Chambres Disponibles</span>
           <div class="text-lg lg:text-xl font-bold font-mono text-white flex items-baseline gap-1">
-            <span id="stat-avail-rooms">5</span> <span class="text-xs text-amber-400 font-sans">/ 8 suites</span>
+            <span id="stat-avail-rooms">5</span> <span class="text-xs text-cyan-400 font-sans">/ 8 suites</span>
           </div>
-          <span class="text-[10px] text-emerald-400 flex items-center gap-1"><i class="bi bi-check-circle"></i> Prêtes à louer</span>
+          <span class="text-[10px] text-cyan-400 flex items-center gap-1"><i class="bi bi-check-circle"></i> Prêtes à louer</span>
         </div>
       </div>
 
       <!-- Stat 2 -->
       <div class="glass-card p-4 rounded-2xl border border-white/10 flex items-center gap-3.5">
-        <div class="w-11 h-11 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-lg">
+        <div class="w-11 h-11 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-lg">
           <i class="bi bi-pie-chart"></i>
         </div>
         <div>
@@ -133,7 +133,7 @@
           <div class="text-lg lg:text-xl font-bold font-mono text-white flex items-baseline gap-1">
             <span>62.5%</span>
           </div>
-          <span class="text-[10px] text-emerald-400 flex items-center gap-1"><i class="bi bi-graph-up"></i> +8% vs semaine passée</span>
+          <span class="text-[10px] text-cyan-400 flex items-center gap-1"><i class="bi bi-graph-up"></i> +8% vs semaine passée</span>
         </div>
       </div>
 
@@ -153,15 +153,15 @@
 
       <!-- Stat 4 -->
       <div class="glass-card p-4 rounded-2xl border border-white/10 flex items-center gap-3.5">
-        <div class="w-11 h-11 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 text-lg">
+        <div class="w-11 h-11 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-cyan-400 text-lg">
           <i class="bi bi-person-badge"></i>
         </div>
         <div>
           <span class="text-[11px] text-slate-400 block font-medium">Arrivées Prévues Aujourd'hui</span>
           <div class="text-lg lg:text-xl font-bold font-mono text-white flex items-baseline gap-1">
-            <span>3</span> <span class="text-xs text-purple-400 font-sans">réservations</span>
+            <span>3</span> <span class="text-xs text-cyan-400 font-sans">réservations</span>
           </div>
-          <span class="text-[10px] text-purple-300 flex items-center gap-1"><i class="bi bi-clock-history"></i> Check-in 14:00</span>
+          <span class="text-[10px] text-blue-300 flex items-center gap-1"><i class="bi bi-clock-history"></i> Check-in 14:00</span>
         </div>
       </div>
     </div>
@@ -197,7 +197,7 @@
       <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
           <h2 class="text-base font-bold text-white flex items-center gap-2 font-display">
-            <i class="bi bi-door-closed text-amber-400"></i>
+            <i class="bi bi-door-closed text-cyan-400"></i>
             Matrice des Chambres &amp; Statut Opérationnel
           </h2>
           <p class="text-xs text-slate-400">Cliquez sur une chambre occupée pour effectuer un Check-Out direct ou éditer son statut</p>
@@ -206,9 +206,9 @@
         <!-- Filter Chips -->
         <div class="flex items-center gap-2 text-xs">
           <button onclick="filterRooms('all')" class="px-2.5 py-1 rounded-lg bg-slate-800 text-white font-semibold">Toutes (8)</button>
-          <button onclick="filterRooms('Disponible')" class="px-2.5 py-1 rounded-lg bg-emerald-950/80 border border-emerald-500/30 text-emerald-300">Disponible</button>
+          <button onclick="filterRooms('Disponible')" class="px-2.5 py-1 rounded-lg bg-slate-900 border border-cyan-500/30 text-emerald-300">Disponible</button>
           <button onclick="filterRooms('Occupée')" class="px-2.5 py-1 rounded-lg bg-rose-950/80 border border-rose-500/30 text-rose-300">Occupée</button>
-          <button onclick="filterRooms('En Nettoyage')" class="px-2.5 py-1 rounded-lg bg-amber-950/80 border border-amber-500/30 text-amber-300">Nettoyage</button>
+          <button onclick="filterRooms('En Nettoyage')" class="px-2.5 py-1 rounded-lg bg-slate-900 border border-blue-500/30 text-blue-300">Nettoyage</button>
         </div>
       </div>
 
@@ -224,7 +224,7 @@
         <div class="lg:col-span-7 glass-card p-6 rounded-3xl border border-white/10 space-y-4">
           <div class="border-b border-white/10 pb-3">
             <h2 class="text-base font-bold text-white flex items-center gap-2 font-display">
-              <i class="bi bi-calendar-plus text-amber-400"></i>
+              <i class="bi bi-calendar-plus text-cyan-400"></i>
               Enregistrer une Réservation &amp; Attribution de Chambre
             </h2>
             <p class="text-xs text-slate-400">Transaction atomique PDO : création du dossier client + verrouillage de la chambre sélectionnée</p>
@@ -234,22 +234,22 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div>
                 <label class="block text-slate-400 mb-1 font-medium">Nom &amp; Prénom du Client *</label>
-                <input type="text" id="b-name" required placeholder="Ex: Jean Dupont / Karim Bennani" class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-white/10 text-white placeholder-slate-600 focus:outline-none focus:border-amber-500 transition">
+                <input type="text" id="b-name" required placeholder="Ex: Jean Dupont / Karim Bennani" class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-white/10 text-white placeholder-slate-600 focus:outline-none focus:border-blue-500 transition">
               </div>
               <div>
                 <label class="block text-slate-400 mb-1 font-medium">Numéro CIN / Passeport *</label>
-                <input type="text" id="b-cin" required placeholder="Ex: CD789123" class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-white/10 text-white placeholder-slate-600 focus:outline-none focus:border-amber-500 transition font-mono uppercase">
+                <input type="text" id="b-cin" required placeholder="Ex: CD789123" class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-white/10 text-white placeholder-slate-600 focus:outline-none focus:border-blue-500 transition font-mono uppercase">
               </div>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div>
                 <label class="block text-slate-400 mb-1 font-medium">Numéro de Téléphone</label>
-                <input type="tel" id="b-tel" placeholder="+212 600-000000" class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-white/10 text-white placeholder-slate-600 focus:outline-none focus:border-amber-500 transition font-mono">
+                <input type="tel" id="b-tel" placeholder="+212 600-000000" class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-white/10 text-white placeholder-slate-600 focus:outline-none focus:border-blue-500 transition font-mono">
               </div>
               <div>
                 <label class="block text-slate-400 mb-1 font-medium">Sélectionner la Chambre *</label>
-                <select id="b-room" required onchange="updateBookingEstimate()" class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-white/10 text-white focus:outline-none focus:border-amber-500 transition">
+                <select id="b-room" required onchange="updateBookingEstimate()" class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-white/10 text-white focus:outline-none focus:border-blue-500 transition">
                   <!-- Populated via JS -->
                 </select>
               </div>
@@ -258,27 +258,27 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div>
                 <label class="block text-slate-400 mb-1 font-medium">Date d'Arrivée (Check-In) *</label>
-                <input type="date" id="b-checkin" required onchange="updateBookingEstimate()" class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-white/10 text-white focus:outline-none focus:border-amber-500 transition">
+                <input type="date" id="b-checkin" required onchange="updateBookingEstimate()" class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-white/10 text-white focus:outline-none focus:border-blue-500 transition">
               </div>
               <div>
                 <label class="block text-slate-400 mb-1 font-medium">Date de Départ (Check-Out) *</label>
-                <input type="date" id="b-checkout" required onchange="updateBookingEstimate()" class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-white/10 text-white focus:outline-none focus:border-amber-500 transition">
+                <input type="date" id="b-checkout" required onchange="updateBookingEstimate()" class="w-full px-3 py-2 rounded-xl bg-slate-950 border border-white/10 text-white focus:outline-none focus:border-blue-500 transition">
               </div>
             </div>
 
             <!-- Estimated Calculation Box -->
-            <div class="p-4 rounded-2xl bg-amber-500/10 border border-amber-500/25 flex items-center justify-between">
+            <div class="p-4 rounded-2xl bg-blue-500/10 border border-blue-500/25 flex items-center justify-between">
               <div>
                 <span class="text-[11px] text-slate-400 block">Estimation du Séjour (<span id="b-nights-count">2</span> nuitées) :</span>
                 <span class="text-xs text-slate-300">TVA 10% &amp; Taxe de séjour incluses</span>
               </div>
               <div class="text-right">
                 <span class="text-xs text-slate-400 font-mono block">TOTAL À PAYER</span>
-                <span id="b-estimate-total" class="text-xl font-bold font-mono text-amber-400">1,750.00 MAD</span>
+                <span id="b-estimate-total" class="text-xl font-bold font-mono text-cyan-400">1,750.00 MAD</span>
               </div>
             </div>
 
-            <button type="submit" class="w-full py-3 rounded-2xl bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-500 hover:to-amber-400 text-white font-bold text-xs uppercase tracking-wider transition shadow-lg shadow-amber-500/25 flex items-center justify-center gap-2">
+            <button type="submit" class="w-full py-3 rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-amber-500 hover:to-amber-400 text-white font-bold text-xs uppercase tracking-wider transition shadow-lg shadow-blue-500/25 flex items-center justify-center gap-2">
               <i class="bi bi-shield-check text-sm"></i>
               <span>Confirmer la Réservation (Transaction PDO)</span>
             </button>
@@ -288,7 +288,7 @@
         <!-- Right Side: Recent Bookings Table -->
         <div class="lg:col-span-5 glass-card p-5 rounded-3xl border border-white/10 space-y-3">
           <h2 class="text-sm font-bold text-white flex items-center gap-2 font-display">
-            <i class="bi bi-clock-history text-amber-400"></i>
+            <i class="bi bi-clock-history text-cyan-400"></i>
             Dernières Réservations Actives
           </h2>
           <div class="overflow-x-auto">
@@ -316,12 +316,12 @@
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/10 pb-4">
           <div>
             <h2 class="text-base font-bold text-white flex items-center gap-2 font-display">
-              <i class="bi bi-receipt-cutoff text-amber-400"></i>
+              <i class="bi bi-receipt-cutoff text-cyan-400"></i>
               Générateur de Facture d'Hébergement Officielle (MAD)
             </h2>
             <p class="text-xs text-slate-400">Conforme aux normes fiscales marocaines (ICE: 002198302000088 · IF: 49201928)</p>
           </div>
-          <button onclick="window.print()" class="px-4 py-2 rounded-xl bg-slate-900 border border-white/10 hover:border-amber-500 text-xs font-semibold text-slate-200 hover:text-white transition flex items-center gap-2">
+          <button onclick="window.print()" class="px-4 py-2 rounded-xl bg-slate-900 border border-white/10 hover:border-blue-500 text-xs font-semibold text-slate-200 hover:text-white transition flex items-center gap-2">
             <i class="bi bi-printer"></i>
             <span>Imprimer la Facture</span>
           </button>
@@ -331,13 +331,13 @@
         <div class="bg-white text-slate-900 p-8 rounded-2xl shadow-xl max-w-3xl mx-auto space-y-6 text-xs font-sans">
           <div class="flex justify-between items-start border-b border-slate-200 pb-5">
             <div>
-              <h3 class="text-xl font-extrabold text-amber-700 font-serif tracking-tight">SARL HIND ET PIERRE</h3>
+              <h3 class="text-xl font-extrabold text-blue-600 font-serif tracking-tight">SARL HIND ET PIERRE</h3>
               <p class="text-slate-600 text-[11px] mt-0.5">Établissement Touristique &amp; Maison d'Hôtes de Luxe</p>
               <p class="text-slate-500 text-[10px]">Quartier Hassan, Rabat, Maroc · Tél: +212 537-708090</p>
               <p class="text-slate-500 text-[10px] font-mono mt-1">ICE: 002198302000088 · IF: 49201928 · Patente: 29103847</p>
             </div>
             <div class="text-right">
-              <span class="inline-block px-3 py-1 rounded-md bg-amber-100 text-amber-900 font-bold text-xs">FACTURE N° F-2026-089</span>
+              <span class="inline-block px-3 py-1 rounded-md bg-blue-50 text-blue-950 font-bold text-xs">FACTURE N° F-2026-089</span>
               <p class="text-slate-500 text-[11px] mt-1">Date d'émission : <strong>21 Novembre 2026</strong></p>
               <p class="text-slate-500 text-[11px]">Mode de règlement : <strong>Carte Bancaire (CMI)</strong></p>
             </div>
@@ -386,7 +386,7 @@
               <div class="flex justify-between"><span>Total Hors Taxe (HT) :</span> <span class="font-mono">3,272.73 MAD</span></div>
               <div class="flex justify-between"><span>TVA Hébergement (10%) :</span> <span class="font-mono">327.27 MAD</span></div>
               <div class="flex justify-between"><span>Taxe de Séjour :</span> <span class="font-mono">75.00 MAD</span></div>
-              <div class="flex justify-between text-base font-extrabold text-amber-900 border-t border-slate-300 pt-1 mt-1">
+              <div class="flex justify-between text-base font-extrabold text-blue-950 border-t border-slate-300 pt-1 mt-1">
                 <span>NET À PAYER (TTC) :</span>
                 <span class="font-mono">3,675.00 MAD</span>
               </div>
@@ -405,7 +405,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
         <div class="glass-card p-5 rounded-3xl border border-white/10 space-y-3">
           <h2 class="text-sm font-bold text-white flex items-center gap-2 font-display">
-            <i class="bi bi-layers text-amber-400"></i>
+            <i class="bi bi-layers text-cyan-400"></i>
             Architecture Logicielle &amp; Transactions PDO
           </h2>
           <p class="text-xs text-slate-300 leading-relaxed">
@@ -414,7 +414,7 @@
           <ul class="text-xs text-slate-400 space-y-1.5 list-disc pl-5">
             <li><strong class="text-white">Database.php :</strong> Singleton de connexion PDO avec gestion du charset UTF-8 et gestion des exceptions.</li>
             <li><strong class="text-white">Chambre.php :</strong> Manipulation des chambres (CRUD, mise à jour des états Disponible / Occupée / Nettoyage).</li>
-            <li><strong class="text-white">Reservation.php :</strong> Gestion des réservations avec <code class="text-amber-300 font-mono">beginTransaction()</code> et <code class="text-amber-300 font-mono">rollBack()</code>.</li>
+            <li><strong class="text-white">Reservation.php :</strong> Gestion des réservations avec <code class="text-blue-300 font-mono">beginTransaction()</code> et <code class="text-blue-300 font-mono">rollBack()</code>.</li>
             <li><strong class="text-white">Client.php :</strong> Gestion du registre des clients, vérification des doublons CIN et historique de séjour.</li>
           </ul>
         </div>
@@ -519,20 +519,20 @@
         let statusBadge = '';
         let borderClass = 'border-white/10';
         if (r.status === 'Disponible') {
-          statusBadge = '<span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/25">Disponible</span>';
+          statusBadge = '<span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-cyan-500/10 text-cyan-400 border border-cyan-500/25">Disponible</span>';
         } else if (r.status === 'Occupée') {
           statusBadge = '<span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-rose-500/10 text-rose-400 border border-rose-500/25">Occupée</span>';
           borderClass = 'border-rose-500/25';
         } else {
-          statusBadge = '<span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-amber-500/10 text-amber-400 border border-amber-500/25">En Nettoyage</span>';
-          borderClass = 'border-amber-500/25';
+          statusBadge = '<span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-blue-500/10 text-cyan-400 border border-blue-500/25">En Nettoyage</span>';
+          borderClass = 'border-blue-500/25';
         }
 
         const card = document.createElement('div');
         card.className = `glass-card p-4 rounded-2xl border ${borderClass} space-y-3 transition duration-200`;
         card.innerHTML = `
           <div class="flex items-center justify-between">
-            <span class="font-mono text-xs font-bold px-2 py-0.5 rounded bg-slate-900 border border-white/10 text-amber-400">N° ${r.num}</span>
+            <span class="font-mono text-xs font-bold px-2 py-0.5 rounded bg-slate-900 border border-white/10 text-cyan-400">N° ${r.num}</span>
             ${statusBadge}
           </div>
           <div>
@@ -541,12 +541,12 @@
           </div>
           <div class="pt-2 border-t border-white/5 text-[11px] text-slate-400 min-h-[36px]">
             ${r.status === 'Occupée' ? `
-              <p class="text-white font-medium flex items-center gap-1.5"><i class="bi bi-person text-amber-400"></i> ${r.guest}</p>
+              <p class="text-white font-medium flex items-center gap-1.5"><i class="bi bi-person text-cyan-400"></i> ${r.guest}</p>
               <p class="text-[10px] text-slate-500">Jusqu'au : ${r.until}</p>
             ` : r.status === 'En Nettoyage' ? `
-              <p class="text-amber-300">Gouvernante en cours d'intervention</p>
+              <p class="text-blue-300">Gouvernante en cours d'intervention</p>
             ` : `
-              <p class="text-emerald-400 flex items-center gap-1"><i class="bi bi-check2"></i> Prête à être attribuée</p>
+              <p class="text-cyan-400 flex items-center gap-1"><i class="bi bi-check2"></i> Prête à être attribuée</p>
             `}
           </div>
           <div class="pt-1">
@@ -555,11 +555,11 @@
                 <i class="bi bi-box-arrow-right"></i> Check-Out Direct
               </button>
             ` : r.status === 'En Nettoyage' ? `
-              <button onclick="markAvailable(${r.id})" class="w-full py-1.5 rounded-xl bg-slate-900 hover:bg-emerald-600 text-[11px] font-semibold text-emerald-300 hover:text-white border border-emerald-500/20 transition flex items-center justify-center gap-1.5">
+              <button onclick="markAvailable(${r.id})" class="w-full py-1.5 rounded-xl bg-slate-900 hover:bg-blue-600 text-[11px] font-semibold text-emerald-300 hover:text-white border border-cyan-500/20 transition flex items-center justify-center gap-1.5">
                 <i class="bi bi-check-all"></i> Marquer Prête
               </button>
             ` : `
-              <button onclick="prefillBooking(${r.id})" class="w-full py-1.5 rounded-xl bg-slate-900 hover:bg-amber-600 text-[11px] font-semibold text-amber-300 hover:text-white border border-amber-500/20 transition flex items-center justify-center gap-1.5">
+              <button onclick="prefillBooking(${r.id})" class="w-full py-1.5 rounded-xl bg-slate-900 hover:bg-blue-600 text-[11px] font-semibold text-blue-300 hover:text-white border border-blue-500/20 transition flex items-center justify-center gap-1.5">
                 <i class="bi bi-plus-circle"></i> Réserver Cette Chambre
               </button>
             `}
@@ -669,8 +669,8 @@
         tr.innerHTML = `
           <td class="py-2 px-2 font-semibold text-white">${b.client}</td>
           <td class="py-2 px-2 text-slate-400">${b.room}</td>
-          <td class="py-2 px-2 text-center font-mono text-amber-300">${b.nights}</td>
-          <td class="py-2 px-2 text-right font-mono font-bold text-emerald-400">${b.total} MAD</td>
+          <td class="py-2 px-2 text-center font-mono text-blue-300">${b.nights}</td>
+          <td class="py-2 px-2 text-right font-mono font-bold text-cyan-400">${b.total} MAD</td>
         `;
         tbody.appendChild(tr);
       });
@@ -680,8 +680,8 @@
     function setLang(lang) {
       playSound('beep');
       const isFr = lang === 'fr';
-      document.getElementById('btn-fr').className = isFr ? "px-2 py-1 rounded-lg font-semibold bg-amber-600 text-white transition" : "px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white transition";
-      document.getElementById('btn-en').className = !isFr ? "px-2 py-1 rounded-lg font-semibold bg-amber-600 text-white transition" : "px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white transition";
+      document.getElementById('btn-fr').className = isFr ? "px-2 py-1 rounded-lg font-semibold bg-blue-600 text-white transition" : "px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white transition";
+      document.getElementById('btn-en').className = !isFr ? "px-2 py-1 rounded-lg font-semibold bg-blue-600 text-white transition" : "px-2 py-1 rounded-lg font-semibold text-slate-400 hover:text-white transition";
 
       document.getElementById('tab-text-rooms').textContent = isFr ? "Planning des Chambres & État" : "Rooms Schedule & Status";
       document.getElementById('tab-text-booking').textContent = isFr ? "Nouvelle Réservation & Check-In" : "New Booking & Check-In";
