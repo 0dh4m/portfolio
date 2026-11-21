@@ -25,23 +25,7 @@
       <a href="cv_fr.html" class="btn-ctrl" title="Passer en Français">
         <span>🇫🇷 Français</span>
       </a>
-      <button class="btn-ctrl" id="btn-toggle-photo" onclick="togglePhotoSlot()" title="Show/Hide Photo">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
-          <circle cx="12" cy="13" r="4" />
-        </svg>
-        <span>Toggle Photo</span>
-      </button>
-      <label for="photo-upload-input" class="btn-ctrl" title="Upload custom photo">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-          <polyline points="17 8 12 3 7 8" />
-          <line x1="12" y1="3" x2="12" y2="15" />
-        </svg>
-        <span>Custom Photo</span>
-      </label>
-      <input type="file" id="photo-upload-input" accept="image/*" onchange="handlePhotoUpload(event)">
-    </div>
+      </div>
 
     <div class="control-bar-right">
       <div class="theme-picker" title="Change Accent Color">
@@ -467,32 +451,7 @@
       }
     }
 
-    // Toggle photo slot visibility
-    function togglePhotoSlot() {
-      const avatar = document.getElementById('avatar-container');
-      if (avatar.style.display === 'none') {
-        avatar.style.display = 'block';
-      } else {
-        avatar.style.display = 'none';
-      }
-    }
-
-    // Custom photo file upload handler
-    function handlePhotoUpload(event) {
-      const file = event.target.files[0];
-      if (file) {
-        const reader = new FileReader();
-        reader.onload = function (e) {
-          const img = document.getElementById('avatar-image');
-          const initials = document.getElementById('avatar-initials');
-          img.src = e.target.result;
-          img.style.display = 'block';
-          initials.style.display = 'none';
-        };
-        reader.readAsDataURL(file);
-      }
-    }
-  </script>
+    </script>
 </body>
 
 </html>
