@@ -74,7 +74,7 @@
       }
     } catch (e) {
       console.warn("Auth check fallback to interactive simulation mode:", e);
-      unlockDashboard({ authenticated: true, camera_configured: true, camera_ip: '192.168.1.184 (Active)' });
+      unlockDashboard({ authenticated: true, camera_configured: true, camera_ip: '192.168.1.100 (Demo Live)' });
       initSimulatedCameraStage();
     }
   }
@@ -602,7 +602,7 @@
     liveStatusText.textContent = 'ONLINE • WEBRTC STREAM';
     liveDot.style.background = '#10b981';
     liveDot.classList.add('pulse');
-    if (camIpTag) camIpTag.textContent = 'IP: 192.168.1.184';
+    if (camIpTag) camIpTag.textContent = 'IP: 192.168.1.100';
 
     // Replace videoStream with an interactive canvas
     if (cameraStream) {
