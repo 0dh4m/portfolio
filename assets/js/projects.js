@@ -58,7 +58,14 @@
     grid.innerHTML = '';
     const filtered = projectsData.filter(p => activeFilter === 'all' || p.category === activeFilter);
     filtered.forEach((p, idx) => {
-      const demoExt = p.demo && p.demo !== '#';
+      let demoLink = p.demo;
+      if (p.id === 'movies') {
+        demoLink = 'demos/movies/index.html';
+      }
+      if (p.id === 'pharmacare' && (!p.github || p.github.includes('portfolio'))) {
+        p.github = 'https://github.com/0dh4m/pharmacare-pro-ai';
+      }
+      const demoExt = demoLink && demoLink !== '#';
       const col = document.createElement('div');
       col.className = 'col-md-6 col-lg-4 reveal' + (firstRender ? '' : ' visible');
       col.style.animation = `cardEntrance 0.35s cubic-bezier(0.16, 1, 0.3, 1) ${idx * 0.04}s forwards`;
@@ -75,7 +82,7 @@
               ${p.tech.map(x => `<span class="tech-badge">${x}</span>`).join('')}
             </div>
             <div class="d-flex gap-2">
-              <a href="${p.demo}" class="project-demo-btn flex-grow-1"${demoExt ? ' target="_blank" rel="noopener"' : ''}>
+              <a href="${demoLink}" class="project-demo-btn flex-grow-1"${demoExt ? ' target="_blank" rel="noopener"' : ''}>
                 <span>${t('projects.demo') || 'Live Demo'}</span>
                 <i class="bi bi-box-arrow-up-right"></i>
               </a>
